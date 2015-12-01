@@ -1,0 +1,11 @@
+{
+  "name": "spindle",
+  "version": "0.1.0",
+  "title": "Spindle",
+  "author": "jtrussell",
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://raw.githubusercontent.com/jtrussell/jquery.spindle/master/LICENSE-MIT"
+  }],
+  "dependencies": []
+}

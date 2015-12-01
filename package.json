@@ -1,0 +1,22 @@
+{
+  "name": "jquery-spindle",
+  "version": "0.1.0",
+  "description": "Silly text spinners",
+  "main": "jquery.spindle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtrussell/jquery.spindle.js.git"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "author": "jtrussell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtrussell/jquery.spindle.js/issues"
+  },
+  "homepage": "https://github.com/jtrussell/jquery.spindle.js#readme"
+}

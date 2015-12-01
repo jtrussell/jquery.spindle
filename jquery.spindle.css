@@ -1,0 +1,41 @@
+.spindle-wrapper .spindle.spindle-active {
+  -webkit-animation-name: jquery-spindle;
+  -webkit-animation-duration: 750ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: jquery-spindle;
+  -moz-animation-duration: 750ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  -o-animation-name: jquery-spindle;
+  -o-animation-duration: 750ms;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+
+  animation-name: jquery-spindle;
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes jquery-spindle {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes jquery-spindle {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@-o-keyframes jquery-spindle {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@keyframes jquery-spindle {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
