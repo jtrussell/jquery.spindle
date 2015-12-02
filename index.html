@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>jQuery Spindle - Minimalist Spinners</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="jquery.spindle.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>jQuery - Spindle</h1>
+      <p>Minimalist spinners. Get it <a href=#https://github.com/jtrussell/jquery.spindle">here</a>.</p>
+      <h3>Example - Standalone Spinners</h3>
+      <p class="quarters">
+        <span class="spindle-on spindle-lg"></span>
+        <span class="spindle-on spindle-md"></span>
+        <span class="spindle-on spindle-sm"></span>
+        <span class="spindle-on spindle-xs"></span>
+      </p>
+
+      <h3>Example - In Buttons</h3>
+      <p>
+        <button class="spindle-button">Toggle (click me!)</button>
+        <button class="spindle-button-ajax">Ajaxy (click me!)</button>
+      </p>
+
+      <h3>General Usage</h3>
+      <p>Add <code>jquery.spindle.js</code> and <code>jquery.spindle.css</code>
+      to your page.</p>
+      <p>Spindle spinners can be added anywhere via:
+      <code>$('...').spindle();</code>. You can also...</p>
+      <ul>
+        <li>Explicitly start a spinner: <br>
+        <code>$('...').spindle('start');</code></li>
+
+        <li>Explicitly stop a spinner: <br>
+        <code>$('...').spindle('stop');</code></li>
+
+        <li>Toggle a spinner's state: <br>
+        <code>$('...').spindle(); /* you can pass 'toggle' too */</code></li>
+
+        <li>Provide your own spinner text:<br>
+        <code>$('...').spindle({text: '@'});</code></li>
+
+        <li>Add custom css to a spinner:<br>
+        <code>$('...').spindle({css: {paddingRight: '10px'}});</code></li>
+
+        <li>Change global defaults: <br>
+        <code>$.fn.spindle.defaults.text = '$';</code><br>
+        There's also a default css property to add <code>5px</code> of right
+        padding.</li>
+      </ul>
+
+      <h3>License</h3>
+      <p><a href="https://raw.githubusercontent.com/jtrussell/jquery.spindle/master/LICENSE-MIT">MIT</a></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jquery.spindle.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
