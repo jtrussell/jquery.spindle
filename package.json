@@ -1,6 +1,6 @@
 {
   "name": "jquery-spindle",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Minimalist spinners",
   "main": "dist/jquery.spindle.js",
   "scripts": {
