@@ -1,0 +1,21 @@
+{
+  "name": "jquery-spindle",
+  "description": "Minimalist spinners",
+  "main": "dist/jquery.spindle.js",
+  "authors": [
+    "jtrussell"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "homepage": "https://github.com/jtrussell/jquery.spindle",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

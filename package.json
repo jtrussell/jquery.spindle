@@ -2,7 +2,7 @@
   "name": "jquery-spindle",
   "version": "0.1.0",
   "description": "Minimalist spinners",
-  "main": "jquery.spindle.js",
+  "main": "dist/jquery.spindle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist && mkdir dist",
