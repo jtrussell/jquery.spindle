@@ -4,7 +4,15 @@
   "description": "Minimalist spinners",
   "main": "jquery.spindle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist && mkdir dist",
+    "build:css-pre": "myth src/jquery.spindle.css > dist/jquery.spindle.css",
+    "build:css-min": "cssmin dist/jquery.spindle.css > dist/jquery.spindle.min.css",
+    "build:css": "npm run build:css-pre && npm run build:css-min",
+    "build:js-copy": "cp src/*.js dist/",
+    "build:js-min": "uglifyjs dist/jquery.spindle.js > dist/jquery.spindle.min.js",
+    "build:js": "npm run build:js-copy && npm run build:js-min",
+    "build": "npm run clean && npm run build:css && npm run build:js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/jtrussell/jquery.spindle.js/issues"
   },
-  "homepage": "https://github.com/jtrussell/jquery.spindle.js#readme"
+  "homepage": "https://github.com/jtrussell/jquery.spindle.js#readme",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "myth": "^1.5.0",
+    "uglifyjs": "^2.4.10"
+  }
 }

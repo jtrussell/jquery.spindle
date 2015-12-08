@@ -1,0 +1,9 @@
+.spindle-wrapper .spindle.spindle-active {
+  animation: jquery-spindle 750ms infinite linear;
+}
+
+@keyframes jquery-spindle {
+  0% {transform:rotate(0deg);}
+  50% {transform:rotate(180deg);}
+  100% {transform:rotate(360deg);}
+}

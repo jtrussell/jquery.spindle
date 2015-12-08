@@ -4,6 +4,12 @@
 
 See the [site][site] for usage.
 
+
+## Building
+
+Build with npm: `npm run build`
+
+
 ## License
 
 [MIT][license]
