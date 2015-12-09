@@ -1,4 +1,5 @@
 .spindle-wrapper .spindle.spindle-active {
+  display: inline-block;
   animation: jquery-spindle 750ms infinite linear;
 }
 
