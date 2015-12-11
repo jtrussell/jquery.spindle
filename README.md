@@ -10,6 +10,11 @@ See the [site][site] for usage.
 Build with npm: `npm run build`
 
 
+## Changelog
+
+- 2015-12-11 v0.3.0 Add `data-spindle-text` support
+
+
 ## License
 
 [MIT][license]
