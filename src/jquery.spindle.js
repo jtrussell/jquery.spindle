@@ -8,32 +8,40 @@ $.fn.spindle = function(action, userOpts) {
     action = 'toggle';
   }
 
-  var $el = $(this)
-    , $s = $el.find('.spindle-wrapper')
-    , opts = $.extend({}, $.fn.spindle.defaults, userOpts)
-    , text = opts.text
-    , css = opts.css;
+  return this.each(function() {
+    var $el = $(this)
+      , $s = $el.find('.spindle-wrapper');
 
-  if('toggle' === action || typeof action === 'undefined') {
-    action = $s.length ? 'stop' : 'start';
-  }
+    var elOpts = {
+      text: $el.data().spindleText
+    };
+    
+    var opts = $.extend({}, $.fn.spindle.defaults, elOpts, userOpts)
+      , text = opts.text
+      , css = opts.css;
 
-  if('start' === action) {
-    if($s.length) { return; }
-    var $s = $('<span></span>')
-      .text(text)
-      .addClass('spindle')
-      .addClass('spindle-active');
-    var $w = $('<span></span>')
-      .addClass('spindle-wrapper')
-      .css(css);
-    $w.append($s);
-    $el.prepend($w);
-  }
+    if('toggle' === action || typeof action === 'undefined') {
+      action = $s.length ? 'stop' : 'start';
+    }
 
-  if('stop' === action) {
-    $s.remove();
-  }
+    if('start' === action) {
+      if($s.length) { return; }
+      var $s = $('<span></span>')
+        .text(text)
+        .addClass('spindle')
+        .addClass('spindle-active');
+      var $w = $('<span></span>')
+        .addClass('spindle-wrapper')
+        .css(css);
+      $w.append($s);
+      $el.prepend($w);
+    }
+
+    if('stop' === action) {
+      $s.remove();
+    }
+  });
+
 };
 
 $.fn.spindle.defaults = {
