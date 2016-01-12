@@ -2,7 +2,7 @@
   "name": "jquery-spindle",
   "version": "0.3.0",
   "description": "Minimalist spinners",
-  "main": "dist/jquery.spindle.js",
+  "main": ["dist/jquery.spindle.js","dist/jquery.spindle.css"],
   "authors": [
     "jtrussell"
   ],
